@@ -44,7 +44,7 @@ var codeHighlighter = (function () {
                     var tJSON;
                     try {
                         tJSON = JSON.parse(curObj);
-                        var tStr = JSON.stringify(tJSON, null, 4);
+                        var tStr = JSON.stringify(tJSON, null, 2);
                         $(obj).html(tStr)
                     } catch (e) {
                         util.debug.error("Error while try to handle JSON");
